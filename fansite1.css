@@ -13,4 +13,7 @@ th {
     border: 1px solid black;
     border-collapse: collapse;
 }
- 
+img{
+    width: 340px;
+    height: 290px;
+}
