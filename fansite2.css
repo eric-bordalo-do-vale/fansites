@@ -1,0 +1,12 @@
+*{
+    border:solid;
+}
+
+body{
+    background-image: url(images/bg.png);
+    background-repeat: repeat-y;
+}
+
+header{
+    align-content: space-around;
+}

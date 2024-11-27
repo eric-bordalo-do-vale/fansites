@@ -10,20 +10,38 @@ linked official site
 
 created a scroll button to the events section
 
+added music videos and links to youtube
+
+added news section
+
+added "other fansites" reddit
+
+added social media
+
+added contact us form
+
+added top of page button
+
+created fansite2.html
+
+renamed fansite1.html to fansite2.html
+
+
+
+fansite2.css{
+
+    added background
+
+    added borders around all elements for testing purposes
+}
+
 
 
 
 
 
 TODO:
-actualité
 
-realisations
+general css 
 
-photos et videos
-
-autres fansites
-
-reseaux sociaux
-
-contactez nous
+anchor top button to corner of page
