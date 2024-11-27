@@ -6,6 +6,11 @@ footer a {
      display: flex;
      flex-direction: row;
 }
-section{
+section {
     border: 1px solid black;
 }
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+ 
