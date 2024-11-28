@@ -1,6 +1,11 @@
+
 header, footer{
     background-color: rgb(255 119 206);
     padding: 20px;
+}
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 body{
     background-color: #f5fefe;
@@ -8,10 +13,10 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
-}
-footer a {
-     display: flex;
-     flex-direction: row;
+
+    a{
+        font-size: 1.05em;
+    }
 }
 section {
     border: 1px solid black;
@@ -24,25 +29,56 @@ img{
     width: 340px;
     height: 290px;
 }
-h1{
+.evenement{
+    h1{
     text-align: center;
+    }
 }
-.fond_ecran {
-    margin: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-        img {
-            width: 60%;
-            height: 500px;
-        }
-}
-.bibliographie{
-    margin-bottom: 50px;
-    margin-top: 20px;
-    padding: 50px;
+.media{
+    h1, h3{
+        text-align: center;
+        color: ;
+    }
 
-    h {
-       font-size: 20px; 
+}
+.accueil{
+    .fond_ecran {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+            img {
+                width: 60%;
+                height: 500px;
+            }
+    }
+    .bibliographie{
+        h1{
+            text-align: center;
+            color: rgb(253, 105, 199);
+            font-size: 30px;
+        }
+        padding: 50px;
+    
+        h4, h5{
+           font-size: 20px; 
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+}
+.actualite{
+    h4{
+        font-size: 1.4em;
+    }
+    p{
+        font-size: 1.05em;
+    }
+}
+.photo{
+    display: flex;
+    article{
+        margin: 20px;
     }
 }
