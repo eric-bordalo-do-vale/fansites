@@ -1,4 +1,7 @@
-
+:root{
+    --couleur_nav: rgb(255 119 206);
+    --couleur_titre: rgb(253, 105, 199);
+}
 header, footer{
     background-color: rgb(255 119 206);
     padding: 20px;
@@ -37,7 +40,23 @@ img{
 .media{
     h1, h3{
         text-align: center;
-        color: ;
+        color: var(--couleur_titre);
+    }
+    .photo, .video{
+        display: flex;
+        flex-wrap: wrap;
+        article{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            margin 10px;
+        }
+    }
+    video{
+        width: 300px;
+        height: 200px;
     }
 
 }
@@ -54,7 +73,7 @@ img{
     .bibliographie{
         h1{
             text-align: center;
-            color: rgb(253, 105, 199);
+            color: var(--couleur_titre) ;
             font-size: 30px;
         }
         padding: 50px;
@@ -74,11 +93,5 @@ img{
     }
     p{
         font-size: 1.05em;
-    }
-}
-.photo{
-    display: flex;
-    article{
-        margin: 20px;
     }
 }
