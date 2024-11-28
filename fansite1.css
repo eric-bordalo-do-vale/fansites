@@ -1,3 +1,10 @@
+header, footer{
+    background-color: rgb(255 119 206);
+    padding: 20px;
+}
+body{
+    background-color: #f5fefe;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -16,4 +23,20 @@ th {
 img{
     width: 340px;
     height: 290px;
+}
+h1{
+    text-align: center;
+}
+.fond_ecran {
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+        img {
+            width: 80%;
+            height: 500px;
+        }
+}
+.bibliographie{
+    
 }
