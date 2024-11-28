@@ -38,6 +38,15 @@ added semi transparent bachground to text
 
 
 
+DAY4
+
+created missing icons (friends, contact, official)
+
+removed section "members" and integrated info in #sns
+
+added title images
+
+added footer nav
 
 
 fansite2.css{
@@ -49,18 +58,30 @@ fansite2.css{
     remove borders
 
     added semi transparent background
+
+    rounded edges on semi transparent background
+
+    added fonts
+
 }
 
+#sns complete
 
+#news complete
 
+#bio complete
+
+#disco complete
+
+#event complete
+
+#autres complete
+
+#contact complete
+
+footer complete
 
 
 
 TODO:
-
-general css 
-
-create remaining nav buttons
-
-replicate top nav on the bottom
-
+add media query

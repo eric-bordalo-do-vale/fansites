@@ -1,6 +1,53 @@
+
 /*{
-    border:solid;
+    border: dashed;
 }*/
+
+/*@media screen and (min-width:320px){
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        img{
+            width:40px;
+            height:auto;
+        }
+    }
+    
+    #totop{
+        display:none;
+    }
+
+    .contacttitlep{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+        .contacttitle{
+        display:flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height:auto;
+        
+        
+        }
+    }
+
+    #event{
+        h2{
+            font-size: 30px;
+        }
+        img{
+            width:500px
+        }
+    }
+
+}
+*/
+
+
+html{
+    scroll-behavior: smooth;
+}
 
 .bandname{
     margin-left: 50px;
@@ -11,16 +58,50 @@
     }
 }
 
+h2{
+    font-family: VT323;
+    font-size: 50px;
+}
+
+p, a{
+    font-family: chakra petch;
+    font-size:20px;
+}
+
 
 
 body{
     background-image: url(images/assets/bg.png);
     background-repeat: repeat-y;
 }
+#bio{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    img{
+        object-fit: cover;
+        width:80%;
+        height:100%
+    }
+    .abouttitle{
+        margin-left:90px
+    }
 
-#bio, #news, #member,#disco, #event, #autres, #contact {
+    .bandpic{
+        border-radius: 50px;
+    }
+
+    article{
+        border-radius: 40px;
+    }
+}
+
+article{
+    /*background space color*/
     background-color: rgba(226, 217, 217, 0.5);
-    padding:20px
+    padding:20px;
+    margin:50px;
+    border-radius: 100px;
 }
 
 
@@ -35,31 +116,153 @@ nav {
 }
 
 #sns{
-
-    background-color: rgba(226, 217, 217, 0.5);
+    a{
+        margin:10px;
+    }
+    p{
+        display:flex;
+        justify-content: center;
+    }
     img{
-        display: flex;
-        justify-content: space-between;
+        border:dashed;
+        border-radius: 100px;
+        padding:10px;
+
+        border-color: aliceblue
+    };
+
+    .snstitlep{
+        img{
+        border:none;
+        border-radius: 0px;
+        }
+    }
+
+    .snstitle{
+        margin-left: 20px;
+    }
+
+    .memberpic{
+        width:250px
     }
 }
-#news h2, p, a{
+
+#news {
+
+    h2, p, a{
     display:flex;
     justify-content: center;
+    }
+
+    img{
+        width:400px;
+        border-radius: 90px;
+    }
+
+    .newstitle{
+        margin-left:90px;
+        border-radius: 0;
+    }
+
+    iframe{
+        border-radius: 90px;
+    }
     
 }
+#disco{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+    article{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
 
-#news img{
-    width:400px;
+        video, img{
+            border-radius: 100px;
+            margin:5px
+        }
+
+        
+    }
 }
 
+#event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            border-radius: 90px;
+        }
+    }
+}
 
-#autres img{
+#autres {
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    article{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .othertitle{
+        width:500px;
+        height:150px
+    }
+
+    img{
     width: 200px;
+    }
 }
 
 
-#totop a img{
+
+#contact{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:500px;
+        border-radius: 50px;
+        
+    }
+
+
+    img{
+        width:500px;
+        height:200px;
+        margin-left:150px;
+    }
+
+    #email, #civil, #submit{
+        height:50px;
+        border-radius: 50px;
+    }
+
+
+    #subject{
+        height:300px;
+        width:500px;
+        border-radius:50px
+    }
+}
+
+
+#totop {
+    a,img{
     position:fixed;
     right:20px;
     bottom:20px;
+    }
 }
