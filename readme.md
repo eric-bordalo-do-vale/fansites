@@ -26,6 +26,18 @@ created fansite2.html
 
 renamed fansite1.html to fansite2.html
 
+DAY3
+
+added icons for buttons
+
+added scroll to top anchored button
+
+added images for section titles
+
+added semi transparent bachground to text
+
+
+
 
 
 fansite2.css{
@@ -33,6 +45,10 @@ fansite2.css{
     added background
 
     added borders around all elements for testing purposes
+
+    remove borders
+
+    added semi transparent background
 }
 
 
@@ -44,4 +60,7 @@ TODO:
 
 general css 
 
-anchor top button to corner of page
+create remaining nav buttons
+
+replicate top nav on the bottom
+
