@@ -24,17 +24,20 @@ nav{
 section {
     border: 1px solid black;
 }
-th {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-img{
-    width: 340px;
-    height: 290px;
-}
+
+
 .evenement{
     h1{
     text-align: center;
+    }
+    th{
+        border: 1px solid black;
+        padding: 20px;
+        width: 200px;
+    }
+    td{
+        padding: 10px;
+        width: 200px;
     }
 }
 .media{
@@ -61,6 +64,10 @@ img{
 
 }
 .accueil{
+    img{
+        width: 340px;
+        height: 290px;
+    }
     .fond_ecran {
         padding-bottom: 20px;
         display: flex;
