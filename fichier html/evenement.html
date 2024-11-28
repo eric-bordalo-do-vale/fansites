@@ -20,6 +20,11 @@
     <main class="evenement">
         <section>
             <h1> Évenements </h1>
+            <p> Ne manquez pas l'événement musical de l'année avec Tiakola, l'étoile montante du rap français, qui se lance dans une tournée exceptionnelle à travers l'Europe ! 🎤🌍 
+                En parcourant les principales capitales et villes européennes, Tiakola promet des performances inoubliables, mêlant énergie brute et mélodies captivantes. 
+                Que vous soyez à Paris, Berlin, Madrid ou Londres, c'est l'occasion rêvée de vibrer au rythme de ses hits et de découvrir en live l'univers unique de cet artiste talentueux.
+                <br>Afin de vous préparer au mieux et de ne rien manquer, nous avons compilé pour vous toutes les informations essentielles sur les dates de concert, les lieux, les sites d'achat de billets et les prix minimum. 
+                Consultez le tableau ci-dessous pour planifier votre soirée et assurez-vous de réserver vos places dès maintenant, car elles risquent de partir très vite ! Ne ratez pas cette chance de vivre une expérience musicale hors du commun avec Tiakola</p>
             <table>
                 <thead>
                     <tr>
@@ -106,37 +111,43 @@
 
         <section id="contact">
             <h2> Nous Contacter </h2>
-            <div>
-                <select name="" id="">
-                    <option value="mademoiselle"> Mlle. </option>
-                    <option value="madame"> Mme. </option>
-                    <option value="monsieur"> M.</option>
-                </select>
+            <section class="premiere_ligne">
+                <div>
+                    <label for="civilite"> Civilité </label>
+                    <select name="civilite" id="civilite">
+                        <option value="mademoiselle"> Mlle. </option>
+                        <option value="madame"> Mme. </option>
+                        <option value="monsieur"> M.</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="nom"> Nom </label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+                <div>
+                    <label for="prenom"> Prénom </label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
 
-            </div>
-            <div>
-                <label for="nom"> Nom </label>
-                <input type="text" name="nom" id="nom">
-            </div>
-            <div>
-                <label for="prenom"> Prénom </label>
-                <input type="text" name="prenom" id="prenom">
-            </div>
-            <div>
-                <label for="numero_telephone"> Téléphone </label>
-                <input type="tel" name="numero_telephone" id="numero_telephone">
-            </div>
-            <div>
-                <label for="mail"> Mail </label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="sujet"> Sujet </label>
-                <input type="text" name="sujet" id="sujet">
-            </div>
-            <div>
+            </section>
+            <section class="deuxieme_ligne">
+                <div>
+                    <label for="numero_telephone"> Téléphone </label>
+                    <input type="tel" name="numero_telephone" id="numero_telephone">
+                </div>
+                <div>
+                    <label for="mail"> Mail </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="sujet"> Sujet </label>
+                    <input type="text" name="sujet" id="sujet">
+                </div>
+            </section>
+            
+            <div class="message">
                 <label for="message"> Message </label>
-                <textarea name="message" id="message"> </textarea>
+                <textarea name="message" id="message" rows="10"> </textarea>
             </div>
         </section>
         <input class="bouton" type="submit" value="Envoyer">
