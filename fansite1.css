@@ -32,6 +32,8 @@ section {
     }
     table{
         border-collapse: collapse;
+        margin: auto;
+        width: 400px;
     }
     th{
         border: 1px solid black;
@@ -66,13 +68,14 @@ section {
             justify-content: center;
         }
         .premiere_ligne, .deuxieme_ligne{
-            margin: 20px;
             padding: 10px;
             display: flex;
             justify-content: space-around;
         }
         .message{
-            width: 97%;
+            width: 400px;
+            height: 150px;
+            margin: auto;
         }
     }
     .bouton{
