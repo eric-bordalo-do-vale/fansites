@@ -2,8 +2,9 @@
 :root{
     --couleur_nav: rgb(255 119 206);
     --couleur_titre: rgb(253, 105, 199);
-    --police: font-family: "Bentham", serif;
+    --police: "Stylish", serif;
 }
+
 header, footer{
     background-color: rgb(255 119 206);
     padding: 20px;
@@ -23,6 +24,14 @@ nav{
         font-size: 1.05em;
     }
 }
+h1, h4, h5, h2, h4{
+    font-size: 20px; 
+    font-family: var(--police);
+
+}
+p {
+     font-size: 18px;
+}
 section {
     
 }
@@ -38,30 +47,17 @@ section {
             }
     }
     .bibliographie{
+        padding: 50px;
         h1{
             text-align: center;
             color: var(--couleur_titre) ;
             font-size: 30px;
-        }
-        padding: 50px;
-    
-        h4, h5{
-           font-size: 20px; 
-        }
-        p {
-            font-size: 18px;
         }
     }
 
 }
 
 .actualite{
-    h4{
-        font-size: 1.4em;
-    }
-    p{
-        font-size: 1.05em;
-    }
 }
 
 .media{
@@ -98,6 +94,7 @@ section {
     }
     h1{
     text-align: center;
+    font-family: var(--police);
     }
     table{
         border-collapse: collapse;
