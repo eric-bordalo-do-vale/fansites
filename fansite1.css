@@ -1,3 +1,4 @@
+/* Création des variables */
 :root{
     --couleur_nav: rgb(255 119 206);
     --couleur_titre: rgb(253, 105, 199);
@@ -25,6 +26,7 @@ nav{
 section {
     
 }
+/* Css du main de la page d'accueil du fansite */
 .accueil{
     .fond_ecran {
         padding-bottom: 20px;
@@ -133,6 +135,7 @@ section {
             flex-direction: column;
             justify-content: center;
         }
+        /* Classement des divisions du champs de texte */
         .premiere_ligne, .deuxieme_ligne{
             padding: 10px;
             display: flex;
@@ -149,7 +152,12 @@ section {
             margin: auto;
             /* la taille de la case à cocher */
             input{
-                width:15px;
+                width:50px;
+            }
+            label{
+                display: block;
+                width: 500px;
+                margin: auto;
             }
         }
     }
