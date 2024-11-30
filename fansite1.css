@@ -33,8 +33,9 @@ h1, h2, h3, h4, h5{
 h1{
     text-align: center;
     color: var(--couleur_titre) ;
-    font-size: 200px;
-    text-shadow: 10px 10px ##cfb3f7;
+    font-size: 80px;
+    text-shadow: 7px 7px #cfb3f7;
+    margin: 0;
 }
 p {
      font-size: 18px;
@@ -64,7 +65,7 @@ section {
 }
 
 .media{
-    h1, h3{
+    h3{
         text-align: center;
         font-size: 2em;
     }
@@ -110,10 +111,6 @@ section {
 .evenement{
     .tableau{
         padding: 50px;
-    }
-    h1{
-    text-align: center;
-    font-family: var(--police);
     }
     table{
         border-collapse: collapse;
@@ -188,6 +185,6 @@ section {
         margin: auto;
         border-radius: 50px;
         background-color: #985ced;
-        opacity: 0.5;
+        opacity: 0.8;
     }
 }
