@@ -19,11 +19,8 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
-
-    a{
-        color: var(--couleur_titre);
-    }
 }
+
 h1, h2, h3, h4, h5{
     font-size: 20px; 
     font-family: var(--police);
@@ -40,6 +37,7 @@ h1{
 a{
     font-size: 1.2em;
     text-decoration: none;
+    color: var(--couleur_titre);
 }
 p {
      font-size: 18px;
@@ -51,17 +49,21 @@ section {
 /* Css du main de la page d'accueil du fansite */
 .accueil{
     .fond_ecran {
-        padding-bottom: 20px;
-        display: flex;
+        padding-bottom: 10px;
+        margin: 0;
         /* Centrer le contenu de la section(images et photos)*/
+        display: flex;
         justify-content: center;
             img {
-                width: 60%;
+                width: 80%;
                 height: 500px;
             }
     }
     .bibliographie{
         padding: 50px;
+        h2{
+            text-align: center;
+        }
     }
 }
 
