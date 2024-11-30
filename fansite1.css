@@ -1,7 +1,7 @@
 /* Création des variables */
 :root{
     --couleur_nav: rgb(255 119 206);
-    --couleur_titre: rgb(253, 105, 199);
+    --couleur_titre: #8338ec;
     --police: "Stylish", serif;
 }
 
@@ -21,7 +21,8 @@ nav{
     justify-content: space-around;
 
     a{
-        font-size: 1.05em;
+        font-size: 1.1em;
+        color: var(--couleur_titre);
     }
 }
 h1, h2, h3, h4, h5{
@@ -29,10 +30,17 @@ h1, h2, h3, h4, h5{
     font-family: var(--police);
 
 }
+h1{
+    text-align: center;
+    color: var(--couleur_titre) ;
+    font-size: 200px;
+    text-shadow: 10px 10px ##cfb3f7;
+}
 p {
      font-size: 18px;
 }
 section {
+    border: 1px solid black;
     
 }
 /* Css du main de la page d'accueil du fansite */
@@ -40,6 +48,7 @@ section {
     .fond_ecran {
         padding-bottom: 20px;
         display: flex;
+        /* Centrer le contenu de la section(images et photos)*/
         justify-content: center;
             img {
                 width: 60%;
@@ -48,11 +57,6 @@ section {
     }
     .bibliographie{
         padding: 50px;
-        h1{
-            text-align: center;
-            color: var(--couleur_titre) ;
-            font-size: 30px;
-        }
     }
 }
 
@@ -62,15 +66,18 @@ section {
 .media{
     h1, h3{
         text-align: center;
-        color: var(--couleur_titre);
+        font-size: 2em;
     }
-    img{
-        width: 340px;
-        height: 290px;
+    img, iframe{
+        width: 350px;
+        height: 300px;
     }
+
     .photo, .video{
+        margin-bottom: 20px ;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         article{
             margin: 20px;
             display: flex;
@@ -80,9 +87,22 @@ section {
             margin: 10px;
         }
     }
-    video{
-        width: 300px;
-        height: 200px;
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 50px;
+            height: 35px;
+            border-radius: 10px;
+            margin: 18px;
+        }
+        /* Retirer le soulignement sur le lien */
+        a{
+            text-decoration: none;
+        }
+        h4{
+            text-align: center;
+        }
     }
 
 }
@@ -112,13 +132,15 @@ section {
         text-align: center;
     }
     #contact{
+        background-color: #985ced;
         padding-left: 200px;
         padding-right: 200px;
         margin: 20px;
+        height: 500px;
 
         h2{
             text-align: center;
-            color: var(--couleur_titre);
+            font-size: 2em;
         }
         input, select{
             border-radius: 5px;
@@ -150,6 +172,7 @@ section {
             input{
                 width:50px;
             }
+            /* Mettre les ecrits au centre */
             label{
                 display: block;
                 width: 500px;
@@ -164,5 +187,7 @@ section {
         height: 50px;
         margin: auto;
         border-radius: 50px;
+        background-color: #985ced;
+        opacity: 0.5;
     }
 }
