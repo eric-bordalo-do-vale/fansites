@@ -4,7 +4,9 @@
     --couleur_titre: #8338ec;
     --police: "Stylish", serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 header, footer{
     background-color: rgb(255 119 206);
     padding: 20px;
@@ -147,9 +149,11 @@ section {
             text-align: center;
             font-size: 2em;
         }
+        /* Arrondis les bordures et effacer le trait */
         input, select{
             border-radius: 5px;
             height: 30px;
+            border: none;
         }
         div{
             margin: 5px;
@@ -168,6 +172,7 @@ section {
             width: 400px;
             height: 150px;
             margin: auto;
+            border-radius: 5px;
         }
         .politique_de_confidentialite{
             display: flex;
@@ -186,7 +191,7 @@ section {
         }
     }
     .bouton{
-        display: block;
+        display: inline-block;
         padding: 10px;
         width: 200px;
         height: 50px;
