@@ -63,6 +63,8 @@ fansite2.css{
 
     added fonts
 
+    added media query section, minimum screen width:320px
+
 }
 
 #sns complete
@@ -84,4 +86,4 @@ footer complete
 
 
 TODO:
-add media query
+add home page link

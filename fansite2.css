@@ -1,56 +1,12 @@
 
-/*{
-    border: dashed;
-}*/
-
-/*@media screen and (min-width:320px){
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        img{
-            width:40px;
-            height:auto;
-        }
-    }
-    
-    #totop{
-        display:none;
-    }
-
-    .contacttitlep{
-            display:flex;
-            flex-direction: column;
-            align-items: flex-end;
-
-        .contacttitle{
-        display:flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        height:auto;
-        
-        
-        }
-    }
-
-    #event{
-        h2{
-            font-size: 30px;
-        }
-        img{
-            width:500px
-        }
-    }
-
-}
-*/
-
 
 html{
     scroll-behavior: smooth;
 }
 
 .bandname{
-    margin-left: 50px;
+    display:flex;
+    justify-content: center;
     img{
         object-fit: cover;
         width:100%;
@@ -83,9 +39,7 @@ body{
         width:80%;
         height:100%
     }
-    .abouttitle{
-        margin-left:90px
-    }
+    
 
     .bandpic{
         border-radius: 50px;
@@ -160,7 +114,6 @@ nav {
     }
 
     .newstitle{
-        margin-left:90px;
         border-radius: 0;
     }
 
@@ -222,6 +175,10 @@ nav {
     }
 }
 
+iframe{
+    border-radius:90px;
+}
+
 
 
 #contact{
@@ -242,7 +199,6 @@ nav {
     img{
         width:500px;
         height:200px;
-        margin-left:150px;
     }
 
     #email, #civil, #submit{
@@ -264,5 +220,97 @@ nav {
     position:fixed;
     right:20px;
     bottom:20px;
+    }
+}
+
+/*--------------------------------media query------------*/
+@media screen and (min-width:320px){
+    
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bandname{
+        width:80%
+    }
+
+    .releasetitle, .abouttitle, .bandname, .newstitle, .livetitle{
+        width:100%
+    }
+    
+    
+    .snstitle{
+        width:80%;
+    }
+    #sns{
+       
+
+        .memberpic{
+            width:100%;
+        }
+
+        img{
+            width:80%;
+            max-width:100%;
+        }
+    }
+    .abouttitlep{
+        display: flex;
+        justify-content: center;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    #event{
+        img:not(.livetitle){
+            width:100%;
+        }
+    }
+
+    #news{
+        iframe{
+            width:100%;
+        }
+
+        img{
+            width:100%;
+        }
+    }
+
+    #disco{
+        article{
+            width:80%;
+
+            iframe{
+                width:100%;
+            }
+        }
+    }
+
+    #autres .othertitle {
+        width: 100%;
+        max-width: 500px; /* Optional: max-width to limit its size */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+    .contacttitle{
+        max-width: 100%;
+    }
+    
+    #contact{
+        article{
+            max-width: 100%;
+        #subject{
+            max-width: 100%;
+            width:90%
+        }
+        }
     }
 }
