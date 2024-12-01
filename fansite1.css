@@ -144,10 +144,9 @@ section {
     }
     #contact{
         background-color: #985ced;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
         margin: 20px;
-        height: 500px;
 
         h2{
             text-align: center;
@@ -167,10 +166,11 @@ section {
             justify-content: center;
         }
         /* Classement des divisions du champs de texte */
-        .premiere_ligne, .deuxieme_ligne{
+        .donnees_personnelles{
             padding: 10px;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
         }
         .message{
             width: 400px;
@@ -208,3 +208,35 @@ section {
         background: linear-gradient(#944ff7, rgb(255 119 206))
     }
 }
+@media screen and (max-width: 996px) {
+    header nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    header nav img {
+      margin-bottom: 20px;
+    }
+  
+    header,
+    footer {
+      padding: 20px 20px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    section {
+      padding: 50px 20px 50px 20px;
+    }
+  
+    nav a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    div{
+        width: 50%;
+      }
+  }
