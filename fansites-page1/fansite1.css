@@ -1,0 +1,203 @@
+/* Création des variables */
+:root{
+    --couleur_nav: rgb(255 119 206);
+    --couleur_titre: #8338ec;
+    --police: "Stylish", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header, footer{
+    background-color: rgb(255 119 206);
+    padding: 20px;
+}
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+body{
+    background-color: #f5fefe;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h2, h3, h4, h5{
+    font-size: 20px; 
+    font-family: var(--police);
+
+}
+h1{
+    text-align: center;
+    color: var(--couleur_titre) ;
+    font-size: 80px;
+    /* Donner les ombres */
+    text-shadow: 7px 7px #cfb3f7;
+    margin: 0;
+}
+a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--couleur_titre);
+}
+p {
+     font-size: 18px;
+}
+section {
+    border: 1px solid black;
+    
+}
+/* Css du main de la page d'accueil du fansite */
+.accueil{
+    .fond_ecran {
+        padding-bottom: 10px;
+        margin: 0;
+        /* Centrer le contenu de la section(images et photos)*/
+        display: flex;
+        justify-content: center;
+            img {
+                width: 80%;
+                height: 500px;
+            }
+    }
+    .bibliographie{
+        padding: 50px;
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+.actualite{
+}
+
+.media{
+    h3{
+        text-align: center;
+        font-size: 2em;
+    }
+    img, iframe{
+        width: 350px;
+        height: 300px;
+    }
+
+    .photo, .video{
+        margin-bottom: 20px ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        article{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            margin: 10px;
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 50px;
+            height: 35px;
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 0;
+        }
+        /* Retirer le soulignement sur le lien */
+        a{
+            text-decoration: none;
+        }
+        h4{
+            text-align: center;
+        }
+    }
+
+}
+
+.evenement{
+    .tableau{
+        padding: 50px;
+    }
+    table{
+        border-collapse: collapse;
+        margin: auto; 
+    }
+    th{
+        border: 1px solid black;
+        padding: 15px;
+        width: 100px;
+        text-align: center;
+    }
+    td{
+        border: 1px solid black;
+        padding: 6px;
+        width: 150px;
+        text-align: center;
+    }
+    #contact{
+        background-color: #985ced;
+        padding-left: 200px;
+        padding-right: 200px;
+        margin: 20px;
+        height: 500px;
+
+        h2{
+            text-align: center;
+            font-size: 2em;
+        }
+        /* Arrondis les bordures et effacer le trait */
+        input, select{
+            border-radius: 5px;
+            height: 30px;
+            border: none;
+        }
+        div{
+            margin: 5px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* Classement des divisions du champs de texte */
+        .premiere_ligne, .deuxieme_ligne{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .message{
+            width: 400px;
+            height: 150px;
+            margin: auto;
+            border-radius: 5px;
+        }
+        .politique_de_confidentialite{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            /* la taille de la case à cocher */
+            input{
+                width:50px;
+            }
+            /* Mettre les ecrits au centre */
+            label{
+                display: block;
+                width: 500px;
+                margin: auto;
+            }
+        }
+    }
+    .bouton{
+        display: inline-block;
+        padding: 10px;
+        width: 200px;
+        height: 50px;
+        margin: auto;
+        border-radius: 50px;
+        color: white;
+        background: linear-gradient(#cbadf6, #8841eb)
+    }
+}
