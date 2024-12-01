@@ -160,7 +160,7 @@ section {
         }
         div{
             margin: 5px;
-            width: 300px;
+            width: 325px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -173,7 +173,7 @@ section {
             flex-wrap: wrap;
         }
         .message{
-            width: 400px;
+            width: 300px;
             height: 150px;
             margin: auto;
             border-radius: 5px;
@@ -236,7 +236,4 @@ section {
       margin-left: 10px;
       margin-right: 10px;
     }
-    div{
-        width: 50%;
-      }
-  }
+}
