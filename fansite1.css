@@ -10,7 +10,6 @@ html{
 header, footer{
     background-color: rgb(255 119 206);
     padding: 20px;
-    position: fixed;
 }
 main{
     margin-top: 50px;
@@ -19,7 +18,10 @@ main{
 body{
     background-color: #f5fefe;
 }
-
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 h1, h2, h3, h4, h5{
     font-size: 20px; 
@@ -142,10 +144,9 @@ section {
     }
     #contact{
         background-color: #985ced;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
         margin: 20px;
-        height: 500px;
 
         h2{
             text-align: center;
@@ -159,19 +160,20 @@ section {
         }
         div{
             margin: 5px;
-            width: 300px;
+            width: 325px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         /* Classement des divisions du champs de texte */
-        .premiere_ligne, .deuxieme_ligne{
+        .donnees_personnelles{
             padding: 10px;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
         }
         .message{
-            width: 400px;
+            width: 300px;
             height: 150px;
             margin: auto;
             border-radius: 5px;
@@ -206,9 +208,32 @@ section {
         background: linear-gradient(#944ff7, rgb(255 119 206))
     }
 }
-@media all and (max-width=100px) { 
-    body{
-       background-color: #8841eb;
+@media screen and (max-width: 996px) {
+    header nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    
+  
+    header nav img {
+      margin-bottom: 20px;
+    }
+  
+    header,
+    footer {
+      padding: 20px 20px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    section {
+      padding: 50px 20px 50px 20px;
+    }
+  
+    nav a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 }
