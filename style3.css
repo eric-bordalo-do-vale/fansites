@@ -2,8 +2,19 @@
 html{
     scroll-behavior: smooth;
 }
+.banner {
+    width: 100%; /* Largeur de la bannière à 100% de la largeur de l'écran */
+    height: auto; /* Hauteur automatique selon l'image */
+    overflow: hidden; /* Cache tout dépassement d'image */
+}
 
-* {
+.banner-image {
+    width: 100%; /* L'image occupe toute la largeur du container */
+    height: auto; /* Hauteur de l'image proportionnelle à la largeur */
+    object-fit: cover; /* L'image couvre la zone sans déformation, et peut être recadrée */
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -43,7 +54,6 @@ nav a {
     transition: color 0.3s ease, transform 0.3s ease; 
 }
 
-/* Effet au survol des liens */
 nav a:hover {
     color: #e60000; /* Rouge vif pour le survol */
     transform: scale(1.1); /* Légère augmentation de la taille au survol */
@@ -66,7 +76,7 @@ nav a:hover::after {
 
 /* Accessibilité */
 nav a:focus {
-    outline: 2px solid #e60000; /* Ajoute un contour rouge lorsqu'un lien est sélectionné via clavier */
+    outline: 2px solid #e60000; 
 }
 
 /* Styles pour la section Actualité */
@@ -81,7 +91,7 @@ nav a:focus {
 #Actualité h2 {
     font-family: 'Montserrat', sans-serif; 
     font-size: 2rem; /* Taille du titre */
-    color: #000; /* Couleur noire pour un contraste fort */
+    color: #000; 
     margin-bottom: 20px; /* Espacement sous le titre */
     text-transform: uppercase; 
 }
@@ -160,7 +170,7 @@ nav a:focus {
 /* Titre de la section Membres */
 #Membres h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem; /* Augmenter la taille du titre */
+    font-size: 2.5rem;
     color: #fff; /* Texte en blanc */
     margin-bottom: 40px; /* Plus d'espace sous le titre */
     text-transform: uppercase;
@@ -173,17 +183,15 @@ nav a:focus {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 40px; /* Espacement entre les membres */
+    gap: 40px; 
 }
 
-/* Chaque élément de membre */
 #Membres .member {
     position: relative;
-    width: 350px; /* Largeur fixe des images */
-    height: 400px; /* Nouvelle hauteur des images */
+    width: 350px; 
+    height: 400px; 
 }
 
-/* Conteneur de l'image et du texte */
 #Membres .member-img {
     position: relative;
     overflow: hidden; /* S'assurer que l'image ne dépasse pas */
@@ -192,7 +200,6 @@ nav a:focus {
     border-radius: 8px; /* Bordures arrondies */
 }
 
-/* Image */
 #Membres .member-img img {
     width: 100%;
     height: 100%;
