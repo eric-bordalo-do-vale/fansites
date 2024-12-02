@@ -1,6 +1,6 @@
 /* Création des variables */
 :root{
-    --couleur_nav: rgb(255 119 206);
+    --couleur_nav: rgb(255 100 139);
     --couleur_titre: #8338ec;
     --police: "Stylish", serif;
 }
@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 header, footer{
-    background-color: rgb(255 119 206);
+    background-color: var(--couleur_nav);
     padding: 20px;
 }
 main{
