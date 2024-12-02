@@ -1,162 +1,234 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fansite Alkaline Trio [Alkaline Trio Blood Pact]">
-    <title>[Alkaline Trio] - Blood Pact Fans</title>
-    <link rel="stylesheet" href="styles.css"> <!-- add CSS -->
+    <meta name="description" content="Site aux fans du groupe de punk rock Alkaline Trio en France. ">
+    <title>Alkaline Trio - Blood Pact France</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
-                <li><a href="#Actualité">Actualité</a></li>
-                <li><a href="#discographie">Discographie</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#fotos-videos">Photos et videos</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#social">Réseaux sociaux</a></li>
-                <li><a href="#fan-club">Community</a></li>
+                <li><a href="#Actualité" aria-label="Section Actualité">Actualité</a></li>
+                <li><a href="#discographie" aria-label="Section Discographie">Discographie</a></li>
+                <li><a href="#tour" aria-label="Section Tour">Tour</a></li>
+                <li><a href="#photos-videos" aria-label="Section Photos et Vidéos">Photos et vidéos</a></li>
+                <li><a href="#contact" aria-label="Section Contact">Contact</a></li>
+                <li><a href="#social" aria-label="Section Réseaux sociaux">Réseaux sociaux</a></li>
+                <li><a href="#fan-club" aria-label="Section Community">Community</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Actualité -->
-        <section id="Actualité">
-            <h2>Actualité</h2>
-            <p>Aqui você encontra as últimas atualizações do grupo, como novos lançamentos, eventos e outras notícias.</p>
+        <!-- Actualités -->
+        <section id="Actualité" aria-labelledby="actualité-heading">
+            <h2 id="actualité-heading">Actualité</h2>
+            <p>Actualités, informations et un peu plus sur le Trio.</p>
             <ul>
                 <!-- Add les actualités ici -->
-                <li><strong>Noveau single:</strong> ....</li>
-                <li><strong>Le nouvel album est sorti!</strong> ....</li>
+                <li>
+                    <strong>Nouveau single The Sacrifice/The Sickness:</strong> Disponible sur toutes les chaînes de streaming
+                    <img src="./contents/photo/AlkalineTrio_TheSacrifice_Co.jpg" alt="Affiche du single The Sacrifice/The Sickness" width="600" height="590" role="img" aria-label="Affiche du single The Sacrifice/The Sickness">
+                </li>
+                <li>
+                    <strong>Le nouvel album est sorti!</strong> Blood, Hair and Eyeballs Le dixième album du trio est sorti et vous pouvez l'écouter ou l'acheter. Un album parfois nostalgique, mais avec des explorations sonores plus matures, c'est en gros ce que l'on peut entendre. Point culminant absolu pour les morceaux Break et Bad Time.
+                    <img src="./contents/photo/public (1).jpg" alt="nouveau disque Blood Hair and Eyeballs disponible" role="img" aria-label="Nouveau disque Blood Hair and Eyeballs disponible">
+                </li>
+                <li>
+                    <strong>Matt Skiba quitte Blink 182:</strong> Mauvaise nouvelle pour ceux qui ont adoré regarder et écouter Sbika sur Blink 182, mais le temps pour Skiba de se consacrer principalement au Trio est de retour. C'est officiel, le départ a été confirmé dans un communiqué sur leurs réseaux sociaux officiels de la part des membres de Blink mais aussi de Skiba lui-même.
+                    <img src="./contents/photo/TomDeLonge-thanks-MattSkiba-696x442.jpg" alt="Matt Skiba et Tom Delonge du groupe Blink 182" role="img" aria-label="Matt Skiba et Tom Delonge du groupe Blink 182">
+                </li>
             </ul>
         </section>
 
-        <!-- Section Discographie -->
-<section id="discographie">
-    <h2>Discogaphie</h2>
-    <p>Découvrez les albums, eps et compilations du trio</p>
-    
-    <!-- Studio Albums -->
-    <div class="discographie-categorie">
-        <h3>Albums</h3>
-        <ul>
-            <!-- Les albums -->
-                <li><strong>Godammnit</strong>1998 - .</li>
-                <li><strong>Maybe I'll catch fire</strong>2000</li>
-                <li><strong>From Here To Infirmary</strong> 2001 - .</li>
-                <li><strong>Good Mourning </strong> 2003</li>
-                <li><strong>Crimson</strong> 2005</li>
-                <li><strong>Agony & Irony</strong> 2008 </li>
-                <li><strong> This Addiction</strong> 2010 - .</li>
-                <li><strong>My Shame is True</strong> 2013 - .</li>
-                <li><strong>Is This Thing Cursed?</strong> 2018 - .</li>
-                <li><strong>Blood, Hair and Eyeball's</strong> - 2024 - .</li>
+       <!-- Membres -->
+<section id="Membres" aria-labelledby="membres-heading">
+    <h2 id="membres-heading">Le Trio</h2>
+    <ul>
+        <li class="member">
+            <div class="member-img">
+                <img src="./contents/photo/2542350-2200x1238-desktop-hd-matt-skiba-wallpaper-photo.jpg" alt="Matt Skiba" width="300" height="200" role="img" aria-label="Matt Skiba, vocal et guitare">
+                <div class="member-info">
+                    <p>Matt Skiba, vocal et guitare</p>
+                </div>
+            </div>
+        </li>
+        <li class="member">
+            <div class="member-img">
+                <img src="./contents/photo/DAndriano1.jpg" alt="Dan Adriano" width="300" height="200" role="img" aria-label="Dan Adriano, vocal et basse">
+                <div class="member-info">
+                    <p>Dan Adriano, vocal et basse</p>
+                </div>
+            </div>
+        </li>
+        <li class="member">
+            <div class="member-img">
+                <img src="./contents/photo/atom-willard-e1686868065238.webp" alt="Atom Willard" width="300" height="200" role="img" aria-label="Atom Willard, batterie">
+                <div class="member-info">
+                    <p>Atom Willard, batterie</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
 
+<section id="Discographie" aria-labelledby="discographie-heading">
+    <h2 id="discographie-heading">Discographie</h2>
+
+    <!-- Albums -->
+    <div class="discographie-categorie" aria-labelledby="albums-heading">
+        <h3 id="albums-heading">Albums</h3>
+        <ul role="list" class="albums-list">
+            <li role="listitem" class="album-item">
+                <strong>Goddamnit</strong> (1998)
+                <img src="./contents/photo/goddamnit.jpg" alt="Couverture du disque Goddamnit, 1998" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>Maybe I'll Catch Fire</strong> (2000)
+                <img src="./contents/photo/Maybe_I'll_Catch_Fire_cover.jpg" alt="Couverture du disque Maybe I'll Catch Fire, 2000" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>From Here to Infirmary</strong> (2001)
+                <img src="./contents/photo/fhti.jpg" alt="Couverture du disque From Here to Infirmary, 2001" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>Good Mourning</strong> (2003)
+                <img src="./contents/photo/goodmourning9.webp" alt="Couverture du disque Good Mourning, 2003" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>Crimson</strong> (2005)
+                <img src="./contents/photo/crimson.jpg" alt="Couverture du disque Crimson, 2005" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>Agony & Irony</strong> (2008)
+                <img src="./contents/photo/Agony_&_Irony_cover.jpg" alt="Couverture du disque Agony & Irony, 2008" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>This Addiction</strong> (2010)
+                <img src="./contents/photo/This_Addiction_cover.jpg" alt="Couverture du disque This Addiction, 2010" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>My Shame is True</strong> (2013)
+                <img src="./contents/photo/Myshameistrue.jpg" alt="Couverture du disque My Shame is True, 2013" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>Is This Thing Cursed?</strong> (2018)
+                <img src="./contents/photo/Alkaline_Trio,_Is_This_Thing_Cursed_cover (1).jpg" alt="Couverture du disque Is This Thing Cursed?, 2018" width="110" height="100" role="img">
+            </li>
+            <li role="listitem" class="album-item">
+                <strong>Blood, Hair and Eyeballs</strong> (2024)
+                <img src="./contents/photo/bhe10.jpg" alt="Couverture du disque Blood, Hair and Eyeballs, 2024" width="110" height="100" role="img">
             </li>
         </ul>
     </div>
 
     <!-- EPs -->
-    <div class="discogrphie-categorie">
-        <h3>EPs</h3>
-        <ul>
-            <!-- EPs -->
-            <li>
-                <strong>For Your Lungs Only</strong> 1998 . <br>
-                <strong>I lied My Face Off</strong>1999<br>
-                <strong>Broken Wing</strong>2013<br>
-                <strong>E.P</strong>2020<br>
-
+    <div class="discographie-categorie" aria-labelledby="eps-heading">
+        <h3 id="eps-heading">EPs</h3>
+        <ul class="eps-list">
+            <li class="ep-item">
+                <strong>For Your Lungs Only</strong> (1998)
+                <img src="./contents/photo/foryourlungsonly.jpg" alt="Couverture de For your lungs Only, 1998">
+            </li>
+            <li class="ep-item">
+                <strong>I Lied My Face Off</strong> (1999)
+                <img src="./contents/photo/lied-my-face-off-on-cdcover.webp" alt="Photo du CD I Lied My Face off, 1999">
+            </li>
+            <li class="ep-item">
+                <strong>Broken Wing</strong> (2013)
+                <img src="./contents/photo/brokenwing.jpg" alt="Couverture de Broken Wing, 2013">
+            </li>
+            <li class="ep-item">
+                <strong>E.P</strong> (2020)
+                <img src="./contents/photo/Ep2020.jpg" alt="Couverture de E.P, 2020">
             </li>
         </ul>
     </div>
 
     <!-- Compilations -->
-    <div class="discographie-complete">
-        <h3>Compilations</h3>
-        <ul>
-            <!-- Les comps -->
-            <li>
-                <strong>Alkaline Trio</strong>2000 - Descrição curta da compilação. <br>
-                <span>Faixa destaque: "Nome da faixa".</span>
+    <div class="discographie-complete" aria-labelledby="compilations-heading">
+        <h3 id="compilations-heading">Compilations</h3>
+        <ul class="compilations-list">
+            <li class="compilation-item">
+                <strong>Alkaline Trio</strong> (2000) - 
+                <span class="compilation-song">Chanson vedette: "Snake Oil Tanker"</span>
+                <br>
+                <audio controls>
+                    <source src="./contents/music/Iframe Snake Oil Tanker [vfIG9YDTSxA].mp3" type="audio/mp3">
+                </audio>
             </li>
-            <li>
-                <strong>Remains</strong> 2007 - <br>
-                <span>Faixa destaque: "Nome da faixa".</span>
+            <li class="compilation-item">
+                <strong>Remains</strong> (2007) - 
+                <span class="compilation-song">Chanson vedette: "Queen of Pain"</span>
+                <br>
+                <audio controls>
+                    <source src="./contents/music/Queen Of Pain_nJ2jj71Yii8.mp3" type="audio/mp3">
+                </audio>
             </li>
-            <li>
-                <strong>Damnesia</strong> 2007 - <br>
-                <span>Faixa destaque: "Nome da faixa".</span>
-            </li>
-            <strong>Box Past Lives</strong> 2018 - <br>
-                <span>Faixa destaque: "Nome da faixa".</span>
         </ul>
     </div>
+
+</section>
+
+<!-- Tour -->
+<section id="tour" aria-labelledby="tour-heading">
+    <h2 id="tour-heading">Europe Tour 2025</h2>
+    <p>Dates à venir :</p>
+    <ul>
+        <li><strong>24/05/2025</strong> <span>Hatfield, UK</span></li>
+        <li><strong>25/05/2025</strong> <span>Leeds, UK</span></li>
+        <li><strong>TBA</strong> <span>Plus de dates bientôt</span></li>
+    </ul>
 </section>
 
 
-        <!-- Section Tour -->
-        <section id="tour">
-            <h2>Tour</h2>
-            <p>.</p>
-            <ul>
-                <!-- Prochaines dates -->
-                <li><strong>Data:</strong> Cidade - Local</li>
-                <li><strong>Data:</strong> Cidade - Local</li>
-            </ul>
-        </section>
+      <!-- Photos et Vidéos -->
+<section id="photos-videos" aria-labelledby="photos-videos-heading">
+    <h2 id="photos-videos-heading">Photos et Vidéos</h2>
+    <div class="media">
+        <!-- Images -->
+        <div class="media-item">
+            <img src="./contents/photo/Alkaline-Trio-press-photo-by-Jonthan-Weiner-2018-billboard-1548.webp" alt="Image promotionnelle d'Alkaline Trio avec l'ancien batteur Derek Grant" role="img" aria-label="Image promotionnelle d'Alkaline Trio">
+        </div>
+        <div class="media-item">
+            <img src="./contents/photo/AlkalineTrio_2023_JW_604_Final_V1.jpg" alt="Image promotionelle du groupe prise en 2023 avec l'actuel batteur Atom Willard" role="img" aria-label="Image promotionnelle d'Alkaline Trio">
+        </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CprfYX6hij4?si=rS5sWJby9zPcS7vb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ga0-r07hkiA?si=jCml0Z0Al7d4Jip_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ksy13DPbVkY?si=MxBWbRxX2JKlm7Tu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
 
-        <!-- Section photos et videos -->
-        <section id="fotos-videos">
-            <h2>Fotos e Vídeos</h2>
-            <p>Confira alguns momentos marcantes do grupo em fotos e vídeos.</p>
-            <div class="media">
-                <img src="imagem1.jpg" alt="Foto 1">
-                <img src="imagem2.jpg" alt="Foto 2">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Seu navegador não suporta o formato de vídeo.
-                </video>
-            </div>
-        </section>
+       <!-- Réseaux sociaux -->
+<section id="social" aria-labelledby="social-heading">
+    <h2 id="social-heading">Réseaux sociaux</h2>
+    <ul class="social-links">
+        <li>
+            <a href="https://www.instagram.com/alkaline_trio/" target="_blank" class="social-link">
+                <img src="./contents/photo/instagram-circle.png" alt="Instagram" class="social-logo">
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/Alkaline_Trio" target="_blank" class="social-link">
+                <img src="./contents/photo/x red logo.jpg" alt="Twitter X" class="social-logo">
+            </a>
+        </li>
+        <li>
+            <a href="https://open.spotify.com/artist/1aEYCT7t18aM3VvM6y8oVR?si=xtmVrk9XTmSMc8ZMMr1ozg&nd=1&dlsi=b3dbf87cd3f94fc8" target="_blank" class="social-link">
+                <img src="./contents/photo/png-clipart-spotify-music-streaming-media-threshold-upa-upa-ubinakono-icon-red-logo-songwriter.png" alt="Spotify" class="social-logo">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/channel/UCHg7MjK4m_-2MTXFr2YQSLA" target="_blank" class="social-link">
+                <img src="./contents/photo/yt logo red cream.png" alt="YouTube" class="social-logo">
+                YouTube
+            </a>
+        </li>
+    </ul>
+</section>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contat</h2>
-            <p>Contacter le développeur.</p>
-            <form action="#" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <!-- Social Media -->
-        <section id="social">
-            <h2>Réseaux sociaux</h2>
-            <p>Suivrez le Trio</p>
-            <ul>
-                <!-- Liens Social Media -->
-                <li><a href="https://www.instagram.com/alkaline_trio/">Instagram</a></li>
-                <li><a href="https://x.com/Alkaline_Trio">Twitter</a></li>
-                <li><a href="https://open.spotify.com/artist/1aEYCT7t18aM3VvM6y8oVR?si=xtmVrk9XTmSMc8ZMMr1ozg&nd=1&dlsi=b3dbf87cd3f94fc8">Spotify</a></li>
-                <li><a href="https://www.youtube.com/channel/UCHg7MjK4m_-2MTXFr2YQSLA">Youtube</a></li>
-
-                
 
             </ul>
         </section>
@@ -169,10 +241,38 @@
                 <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Ftriofans%2F">Accédez à la communauté.</a></li>
             </ul>
         </section>
+    
+         <!-- Contact -->
+         <section id="contact">
+            <h2>Contact</h2>
+            <p>Contacter le développeur.</p>
+            <form action="#" method="POST">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
     </main>
 
+
     <footer>
-        <p>&copy; 2024 [Eric Bordalo ]. Copyleft.</p>
+        <nav role="navigation" aria-label="Menu de navigation footer">
+            <ul>
+                <li><a href="#Actualité" aria-label="Lien vers la section Actualité">Actualité</a></li>
+                <li><a href="#discographie" aria-label="Lien vers la section Discographie">Discographie</a></li>
+                <li><a href="#tour" aria-label="Lien vers la section Tour">Tour</a></li>
+                <li><a href="#photos-videos" aria-label="Lien vers la section Photos et Vidéos">Photos et vidéos</a></li>
+                <li><a href="#contact" aria-label="Lien vers la section Contact">Contact</a></li>
+                <li><a href="#fan-club" aria-label="Lien vers la section Fan Club">Fan Club</a></li>
+            </ul>
+        </nav>
+        <p class="signature">2024 [Eric Bordalo do Vale]. Copyleft.</p>
     </footer>
-</body>
-</html>
+    
