@@ -1,35 +1,29 @@
-/* Import des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap');
 html{
     scroll-behavior: smooth;
 }
 
-/* RESET de base pour éliminer les marges et les paddings par défaut */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Raleway', sans-serif; /* Raleway pour le texte */
     background-color: rgb(255, 250, 240); /* Crème pour le fond */
     color: #333; /* Texte principal en gris foncé */
 }
 
-/* Header */
 header {
     background-color: #000; /* Fond noir */
     padding: 20px;
 }
 
-/* Menu de navigation */
 nav {
     text-align: center;
 }
 
-/* Liste de navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -40,13 +34,13 @@ nav ul {
 /* Liens du menu */
 nav a {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif; /* Montserrat pour les titres du menu */
-    color: #fff; /* Texte blanc */
+    font-family: 'Montserrat', sans-serif; 
+    color: #fff; 
     font-size: 16px;
     letter-spacing: 1px;
-    text-transform: uppercase; /* Mise en majuscules pour un look plus "punk" */
-    padding: 8px 16px; /* Espacement autour des liens */
-    transition: color 0.3s ease, transform 0.3s ease; /* Effet de transition pour le survol */
+    text-transform: uppercase; 
+    padding: 8px 16px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 /* Effet au survol des liens */
@@ -55,18 +49,17 @@ nav a:hover {
     transform: scale(1.1); /* Légère augmentation de la taille au survol */
 }
 
-/* Ajout d'une petite bordure sous chaque lien */
+
 nav a::after {
     content: '';
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #e60000; /* Rouge vif */
+    background-color: #e60000; 
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
-/* Apparition de la bordure au survol */
 nav a:hover::after {
     transform: scaleX(1);
 }
@@ -77,39 +70,39 @@ nav a:focus {
 }
 
 /* Styles pour la section Actualité */
-#Actualité {
+#Actualités {
     padding: 40px 20px; /* Espacement autour de la section */
-    background-color: #fffaf0; /* Fond crème pour correspondre au thème général */
-    color: #333; /* Texte en gris foncé pour la lisibilité */
-    text-align: center; /* Centrage du texte */
+    background-color: #fffaf0; 
+    color: #333; 
+    text-align: center; 
 }
 
 /* Titre de la section */
 #Actualité h2 {
-    font-family: 'Montserrat', sans-serif; /* Utilisation de la police Montserrat */
+    font-family: 'Montserrat', sans-serif; 
     font-size: 2rem; /* Taille du titre */
     color: #000; /* Couleur noire pour un contraste fort */
     margin-bottom: 20px; /* Espacement sous le titre */
-    text-transform: uppercase; /* Pour un effet plus marqué */
+    text-transform: uppercase; 
 }
 
 /* Paragraphe intro */
-#Actualité p {
+#Actualités p {
     font-family: 'Raleway', sans-serif; /* Utilisation de la police Raleway */
     font-size: 1.2rem;
-    color: #555; /* Gris foncé pour le texte secondaire */
-    margin-bottom: 30px; /* Espacement entre le paragraphe et les actualités */
+    color: #555; 
+    margin-bottom: 30px; 
 }
 
 /* Liste des actualités */
-#Actualité ul {
+#Actualités ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 /* Box pour chaque élément d'actualité */
-#Actualité li {
+#Actualités li {
     background-color: #fff; /* Fond blanc pour chaque box */
     border: 1px solid #e60000; /* Bordure rouge pour rappeler les couleurs du groupe */
     margin-bottom: 20px; /* Espacement entre les actualités */
@@ -123,13 +116,13 @@ nav a:focus {
 }
 
 /* Box hover effect (effet de survol) */
-#Actualité li:hover {
+#Actualités li:hover {
     transform: translateY(-5px); /* Légère élévation de la box */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
 }
 
 /* Titre de chaque actualité */
-#Actualité li strong {
+#Actualités li strong {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem; /* Taille du titre dans chaque actualité */
     color: #000; /* Texte en noir pour ressortir */
@@ -137,7 +130,7 @@ nav a:focus {
 }
 
 /* Images dans les actualités */
-#Actualité li img {
+#Actualités li img {
     max-width: 100%; /* L'image prend toute la largeur possible */
     height: 300px; /* Hauteur par défaut de l'image */
     object-fit: cover; /* Garde la taille cohérente sans déformation */
@@ -145,15 +138,15 @@ nav a:focus {
     margin-top: 20px; /* Espacement entre le texte et l'image */
 }
 
-/* Spécifique pour la première image (première actualité) */
-#Actualité li:first-child img {
+/* Spécifique pour la première image (première actualités) */
+#Actualités li:first-child img {
     height: 400px; /* On augmente la hauteur de la première image */
     object-fit: contain; /* Change l'objet pour éviter de couper l'image */
     margin-top: 20px;
 }
 
 /* Option d'espacement entre les items pour un peu plus de structure */
-#Actualité li + li {
+#Actualités li + li {
     margin-top: 30px; /* Plus d'espace entre chaque actualité */
 }
 /* Styles pour la section Membres */
