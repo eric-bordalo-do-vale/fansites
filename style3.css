@@ -14,7 +14,7 @@ html{
 /* Body */
 body {
     font-family: 'Raleway', sans-serif; /* Raleway pour le texte */
-    background-color: #fffaf0; /* Crème pour le fond */
+    background-color: rgb(255, 250, 240); /* Crème pour le fond */
     color: #333; /* Texte principal en gris foncé */
 }
 
