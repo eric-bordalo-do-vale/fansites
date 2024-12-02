@@ -2,23 +2,13 @@
 html{
     scroll-behavior: smooth;
 }
-.banner {
-    width: 100%; /* Largeur de la bannière à 100% de la largeur de l'écran */
-    height: auto; /* Hauteur automatique selon l'image */
-    overflow: hidden; /* Cache tout dépassement d'image */
+.banner-image{
+object-fit: cover;
+width: 100%;
+height: auto;
 }
 
-.banner-image {
-    width: 100%; /* L'image occupe toute la largeur du container */
-    height: auto; /* Hauteur de l'image proportionnelle à la largeur */
-    object-fit: cover; /* L'image couvre la zone sans déformation, et peut être recadrée */
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Raleway', sans-serif; /* Raleway pour le texte */
@@ -39,6 +29,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px; /* Espacement entre les éléments du menu */
 }
 
