@@ -104,12 +104,12 @@ nav a:focus {
 
 /* Box pour chaque élément d'actualité */
 #Actualités li {
-    background-color: #fff; /* Fond blanc pour chaque box */
-    border: 1px solid #e60000; /* Bordure rouge pour rappeler les couleurs du groupe */
+    background-color: #fff; 
+    border: 1px solid #e60000; 
     margin-bottom: 20px; /* Espacement entre les actualités */
     padding: 20px;
     border-radius: 8px; /* Bordures arrondies */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,13 +219,13 @@ nav a:focus {
 /* Texte du membre */
 #Membres .member-info p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem; /* Augmenter la taille du texte */
+    font-size: 1.5rem; 
     text-align: center;
 }
 
 /* Effet de survol sur l'image */
 #Membres .member-img:hover img {
-    transform: scale(1.1); /* Zoom léger au survol */
+    transform: scale(1.1); 
 }
 
 /* Afficher le texte au survol */
@@ -247,7 +247,6 @@ nav a:focus {
     margin-bottom: 40px;
 }
 
-/* Titre des catégories */
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -256,10 +255,8 @@ h3 {
     text-transform: uppercase;
 }
 
-/* Espacement entre les catégories (Albums, EPs, Compilations) */
 .discographie-complete {
-    margin-top: 40px; /* Ajout de marge pour espacer mieux le titre "Compilations" des EPs */
-}
+    margin-top: 40px; 
 
 /* Liste des albums, EPs, compilations */
 .discographie-categorie ul {
@@ -269,6 +266,7 @@ h3 {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Grille responsive */
+}
 }
 
 /* Élément de chaque album, EP ou compilation */
@@ -320,7 +318,7 @@ audio {
 #tour {
     padding: 60px 20px; /* Plus d'espace autour pour une mise en avant */
     background-color: #fffaf0; /* Fond crème */
-    color: #000; /* Texte sombre pour un bon contraste */
+    color: #000; 
     text-align: center;
 }
 
@@ -328,13 +326,13 @@ audio {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem; /* Très grand titre */
     color: #d43f3a; /* Rouge Alkaline Trio */
-    margin-bottom: 20px; /* Un peu d'espace sous le titre */
-    text-transform: uppercase; /* Majuscules */
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
 }
 
 #tour p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem; /* Taille du texte des dates */
+    font-size: 2rem; 
     margin-bottom: 20px;
     color: #000;
 }
@@ -347,9 +345,9 @@ audio {
 
 #tour ul li {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem; /* Texte bien grand pour les dates */
-    margin-bottom: 15px; /* Un peu d'espacement entre les dates */
-    color: #333; /* Légèrement plus clair que le noir */
+    font-size: 2.5rem; 
+    margin-bottom: 15px; 
+    color: #333; 
     display: flex;
     justify-content: center;
     align-items: center;
