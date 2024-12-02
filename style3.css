@@ -1,0 +1,637 @@
+/* Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+/* RESET de base pour éliminer les marges et les paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Raleway', sans-serif; /* Raleway pour le texte */
+    background-color: #fffaf0; /* Crème pour le fond */
+    color: #333; /* Texte principal en gris foncé */
+}
+
+/* Header */
+header {
+    background-color: #000; /* Fond noir */
+    padding: 20px;
+}
+
+/* Menu de navigation */
+nav {
+    text-align: center;
+}
+
+/* Liste de navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacement entre les éléments du menu */
+}
+
+/* Liens du menu */
+nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; /* Montserrat pour les titres du menu */
+    color: #fff; /* Texte blanc */
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Mise en majuscules pour un look plus "punk" */
+    padding: 8px 16px; /* Espacement autour des liens */
+    transition: color 0.3s ease, transform 0.3s ease; /* Effet de transition pour le survol */
+}
+
+/* Effet au survol des liens */
+nav a:hover {
+    color: #e60000; /* Rouge vif pour le survol */
+    transform: scale(1.1); /* Légère augmentation de la taille au survol */
+}
+
+/* Ajout d'une petite bordure sous chaque lien */
+nav a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e60000; /* Rouge vif */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Apparition de la bordure au survol */
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Accessibilité */
+nav a:focus {
+    outline: 2px solid #e60000; /* Ajoute un contour rouge lorsqu'un lien est sélectionné via clavier */
+}
+
+/* Styles pour la section Actualité */
+#Actualité {
+    padding: 40px 20px; /* Espacement autour de la section */
+    background-color: #fffaf0; /* Fond crème pour correspondre au thème général */
+    color: #333; /* Texte en gris foncé pour la lisibilité */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Titre de la section */
+#Actualité h2 {
+    font-family: 'Montserrat', sans-serif; /* Utilisation de la police Montserrat */
+    font-size: 2rem; /* Taille du titre */
+    color: #000; /* Couleur noire pour un contraste fort */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    text-transform: uppercase; /* Pour un effet plus marqué */
+}
+
+/* Paragraphe intro */
+#Actualité p {
+    font-family: 'Raleway', sans-serif; /* Utilisation de la police Raleway */
+    font-size: 1.2rem;
+    color: #555; /* Gris foncé pour le texte secondaire */
+    margin-bottom: 30px; /* Espacement entre le paragraphe et les actualités */
+}
+
+/* Liste des actualités */
+#Actualité ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Box pour chaque élément d'actualité */
+#Actualité li {
+    background-color: #fff; /* Fond blanc pour chaque box */
+    border: 1px solid #e60000; /* Bordure rouge pour rappeler les couleurs du groupe */
+    margin-bottom: 20px; /* Espacement entre les actualités */
+    padding: 20px;
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Box hover effect (effet de survol) */
+#Actualité li:hover {
+    transform: translateY(-5px); /* Légère élévation de la box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+/* Titre de chaque actualité */
+#Actualité li strong {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* Taille du titre dans chaque actualité */
+    color: #000; /* Texte en noir pour ressortir */
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+/* Images dans les actualités */
+#Actualité li img {
+    max-width: 100%; /* L'image prend toute la largeur possible */
+    height: 300px; /* Hauteur par défaut de l'image */
+    object-fit: cover; /* Garde la taille cohérente sans déformation */
+    border-radius: 4px;
+    margin-top: 20px; /* Espacement entre le texte et l'image */
+}
+
+/* Spécifique pour la première image (première actualité) */
+#Actualité li:first-child img {
+    height: 400px; /* On augmente la hauteur de la première image */
+    object-fit: contain; /* Change l'objet pour éviter de couper l'image */
+    margin-top: 20px;
+}
+
+/* Option d'espacement entre les items pour un peu plus de structure */
+#Actualité li + li {
+    margin-top: 30px; /* Plus d'espace entre chaque actualité */
+}
+/* Styles pour la section Membres */
+#Membres {
+    padding: 40px 20px; /* Espacement autour de la section */
+    background-color: #000; /* Fond noir pour la section */
+    color: #fff; /* Texte en blanc pour contraster sur le fond noir */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Titre de la section Membres */
+#Membres h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; /* Augmenter la taille du titre */
+    color: #fff; /* Texte en blanc */
+    margin-bottom: 40px; /* Plus d'espace sous le titre */
+    text-transform: uppercase;
+}
+
+/* Liste des membres */
+#Membres ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espacement entre les membres */
+}
+
+/* Chaque élément de membre */
+#Membres .member {
+    position: relative;
+    width: 350px; /* Largeur fixe des images */
+    height: 400px; /* Nouvelle hauteur des images */
+}
+
+/* Conteneur de l'image et du texte */
+#Membres .member-img {
+    position: relative;
+    overflow: hidden; /* S'assurer que l'image ne dépasse pas */
+    width: 100%;
+    height: 100%; /* Prendre toute la hauteur du conteneur */
+    border-radius: 8px; /* Bordures arrondies */
+}
+
+/* Image */
+#Membres .member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garde le ratio sans déformation */
+    transition: transform 0.3s ease; /* Effet de transition au survol */
+}
+
+/* Info du membre, caché par défaut */
+#Membres .member-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent */
+    color: #fff; /* Texte blanc */
+    opacity: 0; /* Cacher le texte par défaut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease; /* Transition pour afficher/masquer le texte */
+}
+
+/* Texte du membre */
+#Membres .member-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* Augmenter la taille du texte */
+    text-align: center;
+}
+
+/* Effet de survol sur l'image */
+#Membres .member-img:hover img {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/* Afficher le texte au survol */
+#Membres .member-img:hover .member-info {
+    opacity: 1; /* Afficher le texte */
+}
+/* Section Discographie */
+#Discographie {
+    padding: 40px 20px; /* Espacement général */
+    background-color: #fffaf0; /* Fond crème pour la section */
+    color: #333; /* Texte en gris foncé */
+}
+
+#Discographie h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Titre des catégories */
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Espacement entre les catégories (Albums, EPs, Compilations) */
+.discographie-complete {
+    margin-top: 40px; /* Ajout de marge pour espacer mieux le titre "Compilations" des EPs */
+}
+
+/* Liste des albums, EPs, compilations */
+.discographie-categorie ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Grille responsive */
+}
+
+/* Élément de chaque album, EP ou compilation */
+.album-item, .ep-item, .compilation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-item:hover, .ep-item:hover, .compilation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.album-item img, .ep-item img {
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Séparateur pour les chansons vedettes des compilations */
+.compilation-song {
+    font-style: italic;
+    color: #d43f3a; /* Rouge clair */
+    margin-bottom: 10px;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Espacement entre chaque élément dans les listes si besoin */
+.compilations-list {
+    margin-top: 20px; /* Plus d'espace entre les items dans la liste des compilations */
+}
+
+/* Section Tour */
+#tour {
+    padding: 60px 20px; /* Plus d'espace autour pour une mise en avant */
+    background-color: #fffaf0; /* Fond crème */
+    color: #000; /* Texte sombre pour un bon contraste */
+    text-align: center;
+}
+
+#tour h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem; /* Très grand titre */
+    color: #d43f3a; /* Rouge Alkaline Trio */
+    margin-bottom: 20px; /* Un peu d'espace sous le titre */
+    text-transform: uppercase; /* Majuscules */
+}
+
+#tour p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; /* Taille du texte des dates */
+    margin-bottom: 20px;
+    color: #000;
+}
+
+#tour ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tour ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; /* Texte bien grand pour les dates */
+    margin-bottom: 15px; /* Un peu d'espacement entre les dates */
+    color: #333; /* Légèrement plus clair que le noir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tour ul li strong {
+    font-size: 2.8rem; /* Taille de la date (en rouge) */
+    color: #d43f3a; /* Rouge pour les dates */
+    margin-right: 30px; /* Espacement horizontal plus grand entre la date et la ville */
+}
+
+#tour ul li span {
+    font-size: 2.5rem; /* Taille de la ville (en noir) */
+    color: #000; /* Texte en noir */
+}
+
+/* Section Photos et Vidéos */
+#photos-videos {
+    padding: 60px 20px;
+    background-color: #fffaf0; /* Fond crème */
+    color: #000;
+    text-align: center;
+}
+
+#photos-videos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #d43f3a; /* Rouge Alkaline Trio */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 30px;
+    justify-items: center;
+}
+
+.media-item {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Utiliser toute la largeur de la page */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-item img, .media-item iframe {
+    width: 100%;
+    height: auto; /* Garde les proportions */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.media-item:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Fan Club */
+#fan-club {
+    padding: 60px 20px;
+    background-color: #d43f3a; /* Rouge Alkaline Trio */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#fan-club h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#fan-club p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#fan-club ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#fan-club a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    background-color: #fff;
+    color: #d43f3a; /* Rouge Alkaline Trio */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+#fan-club a:hover {
+    background-color: #d43f3a; /* Rouge Alkaline Trio */
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d43f3a; /* Rouge Alkaline Trio */
+}
+
+#contact p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+#contact input,
+#contact textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid #d43f3a; /* Rouge Alkaline Trio */
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    background-color: #d43f3a; /* Rouge Alkaline Trio */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact button:hover {
+    background-color: #a5312d; /* Une nuance plus sombre de rouge */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #f4e3d7; /* Couleur crème */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #d43f3a; /* Rouge Alkaline Trio */
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #d43f3a; /* Rouge Alkaline Trio */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #a5312d; /* Une nuance plus sombre de rouge */
+    transform: scale(1.1);
+}
+
+footer .signature {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+#social {
+    background-color: #fffaf0; /* Fond crème pour la section */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#social h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #d43f3a; /* Rouge Alkaline Trio */
+    margin-bottom: 30px;
+}
+
+#social p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espacement entre les liens */
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; /* Taille du texte réduite */
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #d43f3a; /* Rouge au survol */
+}
+
+.social-logo {
+    width: 60px; /* Augmenter la taille des logos */
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px; /* Espacement entre le logo et le texte */
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-logo {
+    transform: scale(1.2); /* Augmenter le zoom sur le logo au survol */
+}
